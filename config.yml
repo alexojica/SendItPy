@@ -1,0 +1,10 @@
+smtp_server: "smtp.gmail.com"
+smtp_port: 587
+smtp_username: ""
+smtp_password: ""
+sender_email: ""
+max_file_size: 25_000_000  # 25 MB in bytes
+max_email_size: 15_000_000  # 15 MB in bytes
+max_files_per_chunk: 24
+email_delay: 0.5  # seconds
+

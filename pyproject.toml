@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "senditpy"
+authors = [
+    {name = "Alexandru Ojica", email = "aojica65@gmail.com"},
+]
+description = "My package description"
+readme = "README.md"
+requires-python = ">=3.9,<3.10"
+keywords = ["one", "two"]
+license = {text = "BSD-3-Clause"}
+version = "0.0.1"
+dependencies = [
+    "typer==0.9.0",
+    'PyYAML==6.0.1',
+]
+
+[project.optional-dependencies]
+cmd = ["typer[all]==0.9.0"]
+
+[project.scripts]
+senditpy = "senditpy:app"
